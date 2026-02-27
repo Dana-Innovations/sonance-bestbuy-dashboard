@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #343d46;
+  --color-charcoal-light: #4a5568;
+  --color-silver: #e2e2e2;
+  --color-teal: #00A3E1;
+  --color-teal-dark: #0088bd;
+  --color-light-gray: #D9D9D6;
+  --color-off-white: #F5F5F5;
+  --color-surface: #ffffff;
+  --color-surface-glass: rgba(255, 255, 255, 0.7);
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-off-white);
+  color: var(--color-charcoal);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.glass-card-sm {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.stat-value {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal-light);
+}
+
+.accent-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-teal), var(--color-teal-dark));
+  border-radius: 2px;
+}
